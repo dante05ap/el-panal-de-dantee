@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #e6c71d;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 0.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>El panal de Dante</title>
+            <link rel="stylesheet" href="CSS/estilos.css">
+            <style type="text/css">
+                #idsect{
+                    position: fixed;
+            
+                }
+                #idfooter{
+                    background: maroon;
+                    text-align: center;
+                    color: beige;
+                    padding: 12px;
+        
+                }
+                #idtable{
+                    background:orange;
+                    text-align: center;
+                    align-content: center;
+                    color: beige;
+                    padding: 5px;
+                    font-size:150%;
+                    font-family: verdana;
+        
+                }
+                #idsection{
+                    text-align: center;
+                    align-content: center;
+                    padding: 2px;
+                    
+                }
+        
+               
+              
+            </style>
+        </head>
+        <body>
+            <section id='sect'>
+                <img src="portada.png" alt="" width="1200" height="80px">
+            </section>
+            
+            <header id="idheader" align='center'>
+                <img src='logo.png' style="width:420px">   
+            </header>
+        <br>
+        <br>
+        
+            <table id='idtable' bgcolor='orange' border="3" cellpadding='5'  align="center" style="width:600px;" >
+                <tr bgcolor='orange' typetext= >
+                    <td onmouseover='this.style.background="#cc0000"' onmouseout='this.style.background="orange"'><a href="index.html">NOSOTROS</a> </td>
+                    <td onmouseover='this.style.background="#cc0000"' onmouseout='this.style.background="orange"'><a href="descripcion.html">DESCRIPCIÓN</a> </td>
+                    <td onmouseover='this.style.background="#cc0000"' onmouseout='this.style.background="orange"'><a href="producto.html">PRODUCTO</a> </td>
+                    <td onmouseover='this.style.background="#cc0000"' onmouseout='this.style.background="orange"'><a href="contacto.html">CONTACTO</a> </td>
+                    <td onmouseover='this.style.background="#cc0000"' onmouseout='this.style.background="orange"'><a href="canvas.html">CANVAS</a> </td>
+                </tr>
+        
+            </table>
+            <section id='idsection' style='font-family:Lucida Sans;'>
+        
+            
+                <article>
+                    <h2 style="color: orangered;" >Visión del negocio:
+                      <p style='font-size:70%;color: black;'>
+                        Ser el mejor distribuidor de miel de abeja pura, de buena calidad y buen precio
+                      </p>  
+                    </h2>
+                </article>
+                <article>
+                    <h2 style='color: orangered'>Misión del negocio:
+                      <p style='font-size:70%;color: black;'>
+                        Brindar una miel agradable, saludable, con buena presentación, calidad y con normas <br> de higiene. Nos preocupamos por dar una buena atención al cliente.
+                      </p>  
+                    </h2>
+                    <h2 style='color: orangered'>Nuestros valores:</h2>
+                    <section>
+                    <ul style="display: inline-block;line-height:150%;">
+                        <b> <li> Honestidad</li>
+                        <li>Confiabilidad</li>
+                        <li>Transparencia</li>
+                        <li>Legitimidad</li>
+                        <li>Excelencia</li>
+                    </b>
+                    </ul>
+                </section>
+                <img style='align:center;' src="miele.gif" alt="" width="400">
+            </section>
+         
+            <table>
+        
+        
+                <h2 style=' text-align: center; color:orangered;font-family:verdana;'>Nuestras redes sociales</h2>
+        
+                <table align="center" width="54%" border="0" cellpadding="2">
+                    <tr>
+                        <td>
+                            <img src="wp.png" width="60px";/>
+                        </td>
+                        <td>
+                            <h3 style="text-align: left;"><a href="https://web.whatsapp.com/">+51948855506</a></h3>
+                        </td>
+                        <td>
+                            <img src="fb.png" width="60px";/>
+                        </td>
+                        <td>
+                            <h3 style="text-align: left;"><a href="https://www.facebook.com/El-Panal-de-Dante-105642954724555">El Panal de Dante</a></h3>
+                        </td>
+                        <td>
+                            <img src="gmail.png" width="60px";/>
+                        </td>
+                        <td>
+                            <h3 style="text-align: left;"><a href="https://www.gmail.com/">elpanaldedante20@gmail.com</a></h3>
+                            
+                        </td>
+                    </tr>
+                </table>
+        
+            <footer id="idfooter">
+                Página creada por Dante Apaza</footer> 
+            
+        </body>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
